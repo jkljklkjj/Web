@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Web前端大作业:关于湛江的介绍，包括湛江地图、湛江美食、湛江风景、湛江人文等。 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta name="keywords" content="湛江文旅" />
+    <meta name="description" content="湛江文旅" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <title>湛江文旅</title>
+    <style>
+      @font-face {
+        font-family: PangMenZhengDaoCuShuTi-2;
+        src: url("../font/PangMenZhengDaoCuShuTi-2.ttf");
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav id="navigation">
+      <span class="title">湛江宣传网</span>
+      <div id="show">
+        <a href="index.html">首页</a>
+        <a href="scenery.html">景点</a>
+        <a href="food.html">美食</a>
+        <a href="culture.html">文化</a>
+      </div>
+    </nav>
+    <div id="nav-placeholder"></div>
+
+    <div id="show_content">
+      <div id="content">
+        <div id="carousel">
+          <div class="slide active">
+            <img src="../img/scenery/湖光岩.jpg" />
+          </div>
+          <div class="slide"><img src="../img/scenery/寸金桥.jpg" /></div>
+          <div class="slide"><img src="../img/scenery/老街.jpeg" /></div>
+          <div id="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+        <div class="img_show">
+          <div id="scenery_show" class="show_img">
+            <div class="mask">
+              <p class="titlename">湛江美景</p>
+              <p>湛江位于沿海，有着令人惊叹的风景</p>
+              <p><a href="scenery.html">了解更多</a></p>
+            </div>
+          </div>
+            <div class="text">
+              <p class="bigtitle">景点介绍</p>
+              <p>湛江位于广东省西部，是一个美丽的海滨城市，有着丰富的旅游资源，是一个旅游胜地。</p>
+              <p class="middletitle">金沙湾</p>
+              <p>金沙湾是湛江的一个著名景点，是一个美丽的海滩，有着细腻的沙滩和清澈的海水。</p>
+              <p class="middletitle">老街</p>
+              <p>赤坎的老街是一个有着悠久历史的地方，有着古色古香的建筑和独特的风景。</p>
+            </div>
+          </div>
+
+          <div class="img_show">
+            <div id="food_show" class="show_img">
+              <div class="mask">
+                <p class="titlename">湛江美食</p>
+                <p>作为海边城市，湛江的美食文化十分丰富</p>
+                <p><a href="food.html">了解更多</a></p>
+              </div>
+            </div>
+              <div class="text">
+                <p class="bigtitle">美食介绍</p>
+                <p>湛江的美食文化丰富，菜品多样，蒸炒煎炸的都有</p>
+                <p class="middletitle">白切鸡</p>
+                <p>白切鸡以选材讲究，烹饪技艺高超而闻名。选用的鸡肉鲜嫩滑爽，肉质细腻，色泽洁白。烹饪过程中，鸡肉经过热水烫煮，保留了鸡肉的原汁原味。白切鸡搭配特制的酱料食用，口感鲜美。</p>
+                <p class="middletitle">沙虫</p>
+                <p>沙虫是一类独特的海鲜，配上蒜蓉辣椒碎，入口鲜香有劲道，十分美味。</p>
+              </div>
+            </div>
+
+            <div class="img_show">
+              <div id="culture_show" class="show_img">
+                <div class="mask">
+                  <p class="titlename">湛江文化</p>
+                  <p>湛江下有很多地级市、地级县。这些地区有独特的民俗文化。</p>
+                  <p><a href="culture.html">了解更多</a></p>
+                </div>
+              </div>
+                <div class="text">
+                  <p class="bigtitle">文化介绍</p>
+                  <p>湛江下面有吴川市，遂溪县，雷州市等等地区，这些地区文化各异，但是都是湛江文化中的璀璨繁星。</p>
+                  <p class="middletitle">雷剧</p>
+                  <p>雷剧产生于雷州民间，采用雷州方言来演绎。演绎时有时会响起鼓声和锣声以烘托气氛。剧情一般剧烈有吸引力。</p>
+                  <p class="middletitle">醒狮</p>
+                  <p>诞生于遂溪，遂溪也被称为醒狮之乡。两人配合，让狮子实现站立，眨眼和跳跃等动作，配合鞭炮，用于庆祝各类喜事。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="nav-placeholder"></div>
+    </div>
+  </body>
+</html>
+
+<style>
+  #scenery_show {
+    background-image: url("../img/scenery/寸金桥.jpg");
+  }
+  #food_show {
+    background-image: url("../img/food/炒粉.webp");
+  }
+  #culture_show {
+    background-image: url("../img/culture/醒狮.webp");
+  }
+</style>
+
+<script src="../js/transform.js"></script>
