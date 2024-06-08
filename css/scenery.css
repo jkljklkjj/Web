@@ -1,0 +1,20 @@
+.content-button {
+    margin: 10px 20px;
+  }
+  .button-group {
+    display: flex;
+    justify-content: left;
+  }
+
+  .button {
+    background-color: grey;
+  }
+  .button-clicked {
+    background-color: skyblue;
+  }
+
+  #content-frame {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+  }
