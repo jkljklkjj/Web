@@ -155,12 +155,12 @@
   }
 
   .bigtitle {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: 1000;
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
   }
   .middletitle {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 1000;
   }

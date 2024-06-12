@@ -11,5 +11,5 @@ document.querySelectorAll('.content-button').forEach(function(button) {
   });
 
   function iframeLoad(frame){
-    frame.height = frame.contentWindow.document.documentElement.scrollHeight+20;
+    frame.height = (frame.contentWindow.document.documentElement.scrollHeight)*1.05 + 'px';
   }

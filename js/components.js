@@ -1,37 +1,40 @@
 class ImageShow extends HTMLElement {
   // 图片加文字卡片
-    constructor() {
-      super();
-      this.attachShadow({ mode: "open" });
-    }
-
-    connectedCallback() {
-      this.render();
-    }
-
-    render() {
-      this.shadowRoot.innerHTML = `
-        <link rel="stylesheet" type="text/css" href="../../css/views.css" />
-        <div class="img_show">
-          <div class="beauty" style="background-image: url(${this.getAttribute(
-            "imgUrl"
-          )});"></div>
-          <div class="text">
-            <div class="title">${this.getAttribute("title")}</div>
-            <div class="item">${this.getAttribute("item")}</div>
-          </div>
-        </div>
-      `;
-    }
-  }
-
-  customElements.define("image-show", ImageShow);
-
-  class NavigationBar extends HTMLElement {
-    // 导航栏
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' });
+    this.attachShadow({ mode: "open" });
+  }
+
+  connectedCallback() {
+    this.render();
+  }
+
+  render() {
+    const title = this.getAttribute("title");
+    const searchUrl = `https://www.baidu.com/s?wd=湛江${encodeURIComponent(title)}`;
+
+    this.shadowRoot.innerHTML = `
+    <link rel="stylesheet" type="text/css" href="../../css/hoverlink.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/views.css" />
+    <div class="img_show">
+      <div class="beauty" style="background-image: url(${this.getAttribute(
+        "imgUrl"
+      )});"></div>
+      <div class="text">
+        <div class="title"><a class="title-link" href="${searchUrl}" target="_blank">${title}</a></div>
+        <div class="item">${this.getAttribute("item")}</div>
+      </div>
+    </div>
+  `;
+  }
+}
+customElements.define("image-show", ImageShow);
+
+class NavigationBar extends HTMLElement {
+  // 导航栏
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
   }
 
   connectedCallback() {
@@ -55,4 +58,4 @@ class ImageShow extends HTMLElement {
   }
 }
 
-customElements.define('navigation-bar', NavigationBar);
+customElements.define("navigation-bar", NavigationBar);

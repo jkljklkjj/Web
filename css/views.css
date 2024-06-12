@@ -19,14 +19,14 @@
     visibility: visible;
   }
   .item {
-    font-size: 0.5rem;
+    font-size: 50%;
     transition: font-size 0.5s ease-in-out;
-    text-indent: 3em;
+    text-indent: 8%;
   }
   .title {
     position: relative;
     padding-left: 30px;
-    font-size: 1.5rem;
+    font-size: 100%;
     font-weight: 1000;
     padding-bottom: 5px;
   }
@@ -35,7 +35,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap :25px;
+    gap :2%;
     padding: 15px 0;
   }
 
